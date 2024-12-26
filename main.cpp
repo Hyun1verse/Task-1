@@ -10,7 +10,6 @@ void input(int arr[5]) {
 	}
 }
 
-
 // ÇÕ°è
 int calculateSum(int arr[5]) {
 	int sum = 0;
@@ -19,7 +18,6 @@ int calculateSum(int arr[5]) {
 	}
 	return sum;
 }
-
 
 // Æò±Õ
 double calculateAverage(int sum, int size) {
