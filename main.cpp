@@ -1,40 +1,46 @@
 #include <iostream>
 using namespace std;
 
-// ÀÔ·Â
-void input(int arr[5]) {
+// ìž…ë ¥
+void input(int arr[5]) 
+{
 
-	for (int i = 0; i < 5; i++) {
-		cout << "¼ýÀÚ " << (i + 1) << "À» ÀÔ·ÂÇÏ¼¼¿ä.";
+	for (int i = 0; i < 5; i++) 
+	{
+		cout << "ìˆ«ìž " << (i + 1) << "ì„ ìž…ë ¥í•˜ì„¸ìš”.";
 		cin >> arr[i];
 	}
 }
 
-// ÇÕ°è
-int calculateSum(int arr[5]) {
+// í•©ê³„
+int calculateSum(int arr[5]) 
+{
 	int sum = 0;
-	for (int i = 0; i < 5; i++) {
+	for (int i = 0; i < 5; i++) 
+	{
 		sum += arr[i];
 	}
 	return sum;
 }
 
-// Æò±Õ
-double calculateAverage(int sum, int size) {
+// í‰ê· 
+double calculateAverage(int sum, int size) 
+{
 	return (sum * 1.0) / size;
 }
 
 // main
-int main() {
+int main() 
+{
 	int arr[5];
 	input(arr);
 
 	int sum = calculateSum(arr);
 	double average = calculateAverage(sum, 5);
 
-	//°á°ú
-	cout << "ÇÕ°è : " << sum << endl;
-	cout << "Æò±Õ : " << average << endl;
+	//ê²°ê³¼
+	cout << "í•©ê³„ : " << sum << endl;
+	cout << "í‰ê·  : " << average << endl;
 
 	return 0;
 }
